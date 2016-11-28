@@ -43,7 +43,7 @@ Requirements:
 
 
 Bonus options:
-* Save the cart in a server side session. Not Done
+* Save the cart in a server side session. Not Done (at client side localstorage added)
 * Make the cart interactive from the header, clicking on it could display a popover with a summary of the contents.Not Done
 * Add authentication to the api. Not Done
 
