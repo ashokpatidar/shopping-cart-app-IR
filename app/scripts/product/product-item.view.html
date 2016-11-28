@@ -1,0 +1,27 @@
+<div class="col-xs-12 col-sm-6 col-md-3">
+    <div class="thumbnail">
+        <img src="{{productInfo.image}}" class="img-responsive">
+
+        <div class="caption">
+            <h4>{{productInfo.product}}</h4>
+            <product-rating rating="productInfo.rating"></product-rating>
+            <!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>-->
+            <hr class="line">
+            <div class="row">
+                <div class="col-md-3 col-sm-3 col-xs-3 price">
+                    <h3 style="margin:5px auto;"><label>{{productInfo.price | currency:"USD$"}}</label></h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-sm-6 col-xs-6">
+                    <a href="" ng-click="addItem(productInfo)" class="btn btn-success btn-product"><span class="glyphicon glyphicon-shopping-cart"></span> Add To Cart</a>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-6 pull-right">
+
+                    <a href="#productDetail/{{productInfo.id}}" class="btn btn-info btn-product">More Info...</a>
+                </div>
+            </div>
+            <p> </p>
+        </div>
+    </div>
+</div>

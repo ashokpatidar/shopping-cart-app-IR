@@ -1,0 +1,42 @@
+.header-wrapper {
+  background: #333;
+
+  .header {
+    padding: 10px 0;
+  }
+
+  h1 {
+    color: #fff;
+    font-size: 26px;
+    margin: 0;
+
+    @extend .josefin;
+  }
+}
+
+.nav {
+  background: $success;
+
+  ul {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  li {
+    display: inline-block;
+    padding: 2px;
+
+    a {
+      color: $light;
+      display: block;
+      padding: 10px 20px;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 4px;
+
+      &:hover{
+        background: rgba(0,0,0,0.1);
+      }
+    }
+  }
+}

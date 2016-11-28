@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Store</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+    <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Roboto'/>
+    <link href='https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Josefin+Sans' rel='stylesheet'
+          type='text/css'>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type='text/css'
+          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- inject:css -->
+    <link rel="stylesheet" href="app/assets/css/main.css">
+    <!-- endinject -->
+    <!-- inject:js -->
+    <script src="app/vendors/angular-1.4.8/angular.js"></script>
+    <script src="app/vendors/angular-1.4.8/angular-resource.js"></script>
+    <script src="app/vendors/angular-1.4.8/angular-ui-router.js"></script>
+    <script src="app/vendors/flash.js"></script>
+    <script src="app/vendors/lodash.min.js"></script>
+    <script src="app/scripts/app.module.js"></script>
+    <script src="app/scripts/app.shopping.controller.js"></script>
+    <script src="app/scripts/ax.routes.js"></script>
+    <script src="app/scripts/cart/cart.controller.js"></script>
+    <script src="app/scripts/cart/cart.service.js"></script>
+    <script src="app/scripts/common/app.services.js"></script>
+    <script src="app/scripts/product/product-detail.controller.js"></script>
+    <script src="app/scripts/product/product-item.controller.js"></script>
+    <script src="app/scripts/product/product-rating.directive.js"></script>
+    <script src="app/scripts/product/product.controller.js"></script>
+    <script src="app/scripts/product/product.directive.js"></script>
+    <!-- endinject -->
+</head>
+<body ng-app="ax" ng-controller="shoppingAppController">
+<!--<div class="header-wrapper">
+    <div class="container">
+        <div class="header">
+            <div class="main-container">
+
+            </div>
+        </div>
+    </div>
+</div>-->
+<div class="jumbotron text-center">
+    <a ui-sref="product">
+        <button class="btn btn-success pull-left" type="button">
+            <span class="glyphicon glyphicon-home"></span>
+        </button>
+    </a>
+    <a ui-sref="cart">
+        <button class="btn btn-success pull-right" type="button">
+            Cart <span class="badge">{{totalItems}}</span>
+        </button>
+    </a>
+    <h2>Shopping Mini Store</h2>
+    <p>Largest mini store in the world!!!</p>
+</div>
+<div class="main-wrapper">
+    <div class="container">
+        <div flash-message="2000"></div>
+        <div ui-view></div>
+    </div>
+</div>
+<div class="footer-wrapper">
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+                        of type and scrambled it to make a type specimen book.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer-stripe">
+    <div class="main-container">
+        <div class="footer">
+            <p class="corporate-tag pull-right">Developed by: <a href="#">Ashok Patidar</a></p>
+
+            <p>&copy; 2016, POC. All rights reserved.</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

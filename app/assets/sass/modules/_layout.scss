@@ -1,0 +1,97 @@
+html {
+  font-size: 62.5%;
+
+  /* Sets up the Base 10 stuff */
+}
+
+body {
+  margin: 0;
+}
+
+* {
+  font-size: 1.6rem;
+}
+
+.josefin {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.main-container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.main-wrapper {
+  padding: 20px 0;
+  min-height: 300px;
+}
+
+
+p, a, span {
+  font-size: 1.6rem;
+}
+
+.hide {
+  display: none;
+}
+
+h2 {
+  &.material {
+    font-size: 2.2rem;
+    position: relative;
+    padding-bottom: 15px;
+
+    &:after {
+      height: 3px;
+      width: 40px;
+      background: $warning;
+      content: "";
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+    }
+  }
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: 1.4rem;
+}
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.txt-left {
+  text-align: left;
+}
+
+.txt-right {
+  text-align: right;
+}
+
+ul {
+  padding: 0px;
+  margin: 0;
+
+  li {
+    display: block;
+    font-size: 1.4rem;
+
+    a {
+      display: block;
+      line-height: 2.2rem;
+    }
+  }
+}
